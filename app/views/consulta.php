@@ -15,8 +15,8 @@
                 <tr>
                     <td><?=  $reg['nome'] ?></td>
                     <td><?= $reg['email'] ?></td>
-                    <td><a href="?router=Site/editar/&id=<?= $reg['id'] ?>">EDITAR</a> |
-                        <a href="?router=Site/deletar/&id=<?= $reg['id'] ?>">DELETAR</a></td>
+                    <td><a href="?router=Site/editar/&id=<?= base64_encode($reg['id']) ?>">EDITAR</a> |
+                        <a href="?router=Site/deletar/&id=<?=  base64_encode($reg['id']) ?>" class="red-text">DELETAR</a></td>
                 </tr>
                 <?php } ?>
         </table>
