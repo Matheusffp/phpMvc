@@ -2,7 +2,9 @@
 
 namespace app\controllers;
 
-class Site
+use app\models\Crud;
+
+class Site extends Crud
 {
      public function home()
      {
