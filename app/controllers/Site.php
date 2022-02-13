@@ -19,11 +19,15 @@ class Site extends Crud
 
      public function cadastro()
      {
+         if($_POST){
+         $cadastro = $this->create();
+         }
          require __DIR__ . '/../views/cadastro.php'; 
      }
 
      public function consulta()
      {
+         $consulta = $this->read();
          require __DIR__ . '/../views/consulta.php'; 
      }
 }
